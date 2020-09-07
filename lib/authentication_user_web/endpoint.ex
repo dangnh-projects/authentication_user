@@ -51,5 +51,6 @@ defmodule AuthenticationUserWeb.Endpoint do
   plug Plug.Head
   plug Plug.Session, @session_options
   plug Pow.Plug.Session, otp_app: :authentication_user
+  plug PowPersistentSession.Plug.Cookie
   plug AuthenticationUserWeb.Router
 end

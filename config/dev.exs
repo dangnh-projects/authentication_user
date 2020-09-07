@@ -1,9 +1,9 @@
 use Mix.Config
 
 # Configure your database
-config :authentication_user, AuthenticationUser.Repo,
+config :authentication_user, AuthenticationUser.RepoAuthentication,
   username: "sa",
-  password: "some!Password",
+  password: "anhnangcuaanh",
   database: "authentication_user_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,

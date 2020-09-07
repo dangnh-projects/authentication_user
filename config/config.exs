@@ -8,7 +8,7 @@
 use Mix.Config
 
 config :authentication_user,
-  ecto_repos: [AuthenticationUser.Repo]
+  ecto_repos: [AuthenticationUser.RepoAuthentication]
 
 # Configures the endpoint
 config :authentication_user, AuthenticationUserWeb.Endpoint,

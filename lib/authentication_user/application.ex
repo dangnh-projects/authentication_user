@@ -8,7 +8,7 @@ defmodule AuthenticationUser.Application do
   def start(_type, _args) do
     children = [
       # Start the Ecto repository
-      AuthenticationUser.Repo,
+      AuthenticationUser.RepoAuthentication,
       # Start the Telemetry supervisor
       AuthenticationUserWeb.Telemetry,
       # Start the PubSub system

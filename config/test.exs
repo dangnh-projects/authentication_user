@@ -5,7 +5,7 @@ use Mix.Config
 # The MIX_TEST_PARTITION environment variable can be used
 # to provide built-in test partitioning in CI environment.
 # Run `mix help test` for more information.
-config :authentication_user, AuthenticationUser.Repo,
+config :authentication_user, AuthenticationUser.RepoAuthentication,
   username: "sa",
   password: "some!Password",
   database: "authentication_user_test#{System.get_env("MIX_TEST_PARTITION")}",

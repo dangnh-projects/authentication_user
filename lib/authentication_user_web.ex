@@ -72,6 +72,15 @@ defmodule AuthenticationUserWeb do
     end
   end
 
+  def mailer_view do
+    quote do
+      use Phoenix.View, root: "lib/my_app_web/templates",
+                        namespace: AuthenticationUserWeb
+
+      use Phoenix.HTML
+    end
+  end
+
   @doc """
   When used, dispatch to the appropriate controller/view/etc.
   """
